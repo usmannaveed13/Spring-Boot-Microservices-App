@@ -55,8 +55,8 @@ public class AccountsController {
     }
 
     @PostMapping("/myCustomerDetails")
-    @CircuitBreaker(name = "detailsForCustomerSupportApp",fallbackMethod
-             ="myCustomerDetailsFallBack")
+//    @CircuitBreaker(name = "detailsForCustomerSupportApp",fallbackMethod
+//             ="myCustomerDetailsFallBack")
     @Retry(name = "retryForCustomerDetails", fallbackMethod = "myCustomerDetailsFallBack")
     public CustomerDetails myCustomerDetails(@RequestBody Customer customer) {
         Accounts accounts = accountsRepository.findByCustomerId(customer.getCustomerId());
