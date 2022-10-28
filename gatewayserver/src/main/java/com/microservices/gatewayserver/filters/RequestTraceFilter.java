@@ -13,8 +13,8 @@ import reactor.core.publisher.Mono;
 
 @Order(1)
 @Component
-public class TraceFilter implements GlobalFilter {
-    private static final Logger logger = LoggerFactory.getLogger(TraceFilter.class);
+public class RequestTraceFilter implements GlobalFilter {
+    private static final Logger logger = LoggerFactory.getLogger(RequestTraceFilter.class);
 
     @Autowired
     FilterUtility filterUtility;
