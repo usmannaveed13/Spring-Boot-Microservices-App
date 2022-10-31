@@ -9,11 +9,6 @@ services:
       - "9411:9411"
     networks:
       - microservicebankapp
-    depends_on:
-      - zipkin
-    environment:
-      SPRING_PROFILES_ACTIVE: default
-      SPRING_ZIPKIN_BASEURL: http://zipkin:9411/
 
   configserver:
     image: microservices/configserver-updated:latest
