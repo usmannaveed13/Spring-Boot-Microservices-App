@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: configserver
-          image: microservices/configserver-updated:latest
+          image: usmannaveed13/configserver-updated
           ports:
             - containerPort: 8071
           env:

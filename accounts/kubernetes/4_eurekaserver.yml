@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: eurekaserver
-          image: microservicebankapp/eurekaserver-updated:latest
+          image: usmannaveed13/eurekaserver-updated
           ports:
             - containerPort: 8070
           env:

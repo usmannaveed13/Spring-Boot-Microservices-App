@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: accounts
-          image: microservicebankapp/accounts-updated:latest
+          image: usmannaveed13/accounts-updated
           ports:
             - containerPort: 8080
           env:
